@@ -25,12 +25,7 @@
 
                 // Inject CSS dynamically into iframe document
                 const style = document.createElement('style');
-                style.innerHTML = `
-                    .pointer-events-none {
-                        visibility: hidden !important;
-                    }
-                `;
-                
+                style.innerHTML = `.pointer-events-none { visibility: hidden !important; }`;
                 iframeDoc.head.appendChild(style);
             };
         });
